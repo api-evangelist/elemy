@@ -1,8 +1,26 @@
 aid: elemy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/elemy.png
 name: Elemy
-description: Elemy is a company surfaced as a portfolio company of 8vc, general-catalyst, softbank-vision-fund
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Elemy (formerly Sprout Therapy) was a US pediatric behavioral-health startup providing in-home
+  Applied Behavior Analysis (ABA) therapy for children with autism, reaching unicorn valuation on
+  backing from SoftBank Vision Fund, General Catalyst, and 8VC. In late 2022 it wound down its
+  direct-care therapy division and pivoted to software; in 2023 it rebranded to Tilly
+  (tillytherapy.com), a HIPAA-compliant ABA practice-management and AI platform covering intake,
+  scheduling, authorizations, billing, payroll, and family engagement for autism-care providers.
+  The original elemy.com domain no longer resolves. Tilly is a closed SaaS product with no
+  public developer API, developer portal, or published API documentation as of this profile.
 url: https://raw.githubusercontent.com/api-evangelist/elemy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +30,21 @@ x-backed-by:
 - softbank-vision-fund
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-former-name: Sprout Therapy
+x-rebranded-to: Tilly (https://tillytherapy.com)
+x-status: rebranded; no public developer API surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Autism Care
+- ABA Therapy
+- Behavioral Health
+- Practice Management
+- SaaS
+- HealthTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +52,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/elemy-domain-security.yml
 - type: Website
-  url: https://elemy.com
+  url: https://tillytherapy.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/tillytherapy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
